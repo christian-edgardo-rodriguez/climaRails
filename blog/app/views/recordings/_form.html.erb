@@ -1,0 +1,13 @@
+<%= form_with(model: [ @location, @location.recordings.build ], local: true) do |form| %>
+  <p>
+    <%= form.label :temperature  %><br>
+    <%= form.text_field :temp %>
+  </p>
+  <p>
+    <%= form.label :status %><br>
+    <%= form.text_field :status %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

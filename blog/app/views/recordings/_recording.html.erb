@@ -1,0 +1,15 @@
+<p>
+	<strong>Temperature (in Celsius):</strong>
+	<%= recording.temp %>
+</p>
+
+<p>
+	<strong>Status:</strong>
+	<%= recording.status %>
+</p>
+
+<p>
+  <%= link_to 'Delete Recording', [recording.location, recording],
+               method: :delete,
+               data: { confirm: 'Are you sure you want to delete this recording?' } %>
+</p>
