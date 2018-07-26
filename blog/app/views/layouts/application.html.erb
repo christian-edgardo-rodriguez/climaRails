@@ -26,6 +26,9 @@
           <ul class="nav navbar-nav">
             <li><a href="/locations">Locations</a></li>
           </ul>
+          <ul class="nav navbar-nav">
+            <li><%= link_to "Logout", main_app.destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -40,7 +43,7 @@
     </div>
     <footer>
       <div class="container">
-        Climate Checker <%= Time.now.year %>
+        Climate Checker ©<%= Time.now.year %>
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
